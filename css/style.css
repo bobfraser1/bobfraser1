@@ -1,0 +1,188 @@
+@IMPORT url("reset.css");
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+	line-height: 1.2;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+p {
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+}
+
+a:link {
+	color: #00f;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #00f;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #f0f;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	margin-bottom: 1.0em;
+	padding-left: 2.5em;
+	list-style-type: disc;
+}
+
+ul ul {
+	margin-top: 0em;
+	margin-bottom: 0em;
+	list-style-type: circle;
+}
+
+ol {
+	margin-bottom: 1.0em;
+	padding-left: 2.5em;
+	list-style-type: decimal;
+}
+
+ol ol {
+	margin-top: 0em;
+	margin-bottom: 0em;
+	list-style-type: lower-alpha;
+}
+
+table,th,td {
+	border: 1px solid black;
+}
+
+th {
+	font-weight: bold;
+	padding: .3em;
+}
+
+td {
+	padding: .3em;
+}
+
+.lefthalf {
+	float: left;
+	width: 50%;
+}
+
+.righthalf {
+	float: right;
+	width: 50%;
+}
+
+.clearfix:after {
+	content: "\00A0";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#page {
+	
+}
+
+#header {
+	
+}
+
+#menu {
+	
+}
+
+#content {
+	margin: .5em;
+}
+
+#footer {
+	background: #333;
+	color: white;
+	font-size: .75em;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+#footer a:link {
+	color: #fff;
+}
+
+#footer a:visited {
+	color: #fff;
+}
+
+#footer a:active {
+	color: #f0f;
+}
+
+#nav {
+	display: inline-block;
+	width: 100%;
+	background: #333;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	float: left;
+	position: relative;
+}
+
+#nav a {
+	display: block;
+	padding-top: .3em;
+	padding-right: .5em;
+	padding-bottom: .3em;
+	padding-left: .5em;
+	color: #fff;
+	text-decoration: none;
+}
+
+#nav ul {
+	display: none;
+	position: absolute;
+	background: #333;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav ul li {
+	float: none;
+}
+
+#nav ul a {
+	padding-top: .3em;
+	padding-right: 1em;
+	padding-bottom: .3em;
+	padding-left: 1em;
+	font-size: .8em;
+	white-space: nowrap;
+}
+
+#nav li:hover {
+	background: #39c;
+}
+
+#nav li:hover ul {
+	display: block;
+}
