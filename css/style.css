@@ -1,188 +1,291 @@
-@IMPORT url("reset.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+  blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+  ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+  center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+  tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+  summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+  section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 body {
-	font-family: arial, helvetica, sans-serif;
-	font-size: 90%;
-	line-height: 1.2;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 90%;
+  line-height: 1.2;
 }
 
 img {
-	height: auto;
-	max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 p {
-	margin-top: 1.0em;
-	margin-bottom: 1.0em;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
 }
 
 a:link {
-	color: #00f;
-	text-decoration: none;
+  color: #00f;
+  text-decoration: none;
 }
 
 a:visited {
-	color: #00f;
+  color: #00f;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:active {
-	color: #f0f;
+  color: #f0f;
 }
 
 em {
-	font-style: italic;
+  font-style: italic;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 ul {
-	margin-bottom: 1.0em;
-	padding-left: 2.5em;
-	list-style-type: disc;
+  margin-bottom: 1.0em;
+  padding-left: 2.5em;
+  list-style-type: disc;
 }
 
 ul ul {
-	margin-top: 0em;
-	margin-bottom: 0em;
-	list-style-type: circle;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  list-style-type: circle;
 }
 
 ol {
-	margin-bottom: 1.0em;
-	padding-left: 2.5em;
-	list-style-type: decimal;
+  margin-bottom: 1.0em;
+  padding-left: 2.5em;
+  list-style-type: decimal;
 }
 
 ol ol {
-	margin-top: 0em;
-	margin-bottom: 0em;
-	list-style-type: lower-alpha;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  list-style-type: lower-alpha;
 }
 
-table,th,td {
-	border: 1px solid black;
+table, th, td {
+  border: 1px solid black;
 }
 
 th {
-	font-weight: bold;
-	padding: .3em;
+  font-weight: bold;
+  padding: .3em;
 }
 
 td {
-	padding: .3em;
+  padding: .3em;
 }
 
 .lefthalf {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .righthalf {
-	float: right;
-	width: 50%;
+  float: right;
+  width: 50%;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-	content: "\00A0";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  clear: both;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  vertical-align: middle;
 }
 
 #page {
-	
+  
 }
 
 #header {
-	
+  
+}
+
+#banner {
+  
+}
+
+#bannerleft {
+  
+}
+
+#bannerright {
+  text-align: right;
+}
+
+#welcome {
+  padding-top: .5em;
+  padding-right: .5em;
+  font-weight: bold;
 }
 
 #menu {
-	
+  
 }
 
 #content {
-	margin: .5em;
+  
 }
 
 #footer {
-	background: #333;
-	color: white;
-	font-size: .75em;
-	line-height: 2.5em;
-	text-align: center;
+  background: #333;
+  color: white;
+  font-size: .75em;
+  line-height: 2.5em;
+  text-align: center;
 }
 
 #footer a:link {
-	color: #fff;
+  color: #fff;
 }
 
 #footer a:visited {
-	color: #fff;
+  color: #fff;
 }
 
 #footer a:active {
-	color: #f0f;
+  color: #f0f;
 }
 
 #nav {
-	display: inline-block;
-	width: 100%;
-	background: #333;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  display: inline-block;
+  width: 100%;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #nav li {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
 }
 
 #nav a {
-	display: block;
-	padding-top: .3em;
-	padding-right: .5em;
-	padding-bottom: .3em;
-	padding-left: .5em;
-	color: #fff;
-	text-decoration: none;
+  display: block;
+  padding-top: .3em;
+  padding-right: .5em;
+  padding-bottom: .3em;
+  padding-left: .5em;
+  color: #fff;
+  text-decoration: none;
 }
 
 #nav ul {
-	display: none;
-	position: absolute;
-	background: #333;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  display: none;
+  position: absolute;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #nav ul li {
-	float: none;
+  float: none;
 }
 
 #nav ul a {
-	padding-top: .3em;
-	padding-right: 1em;
-	padding-bottom: .3em;
-	padding-left: 1em;
-	font-size: .8em;
-	white-space: nowrap;
+  padding-top: .3em;
+  padding-right: 1em;
+  padding-bottom: .3em;
+  padding-left: 1em;
+  font-size: .8em;
+  white-space: nowrap;
 }
 
 #nav li:hover {
-	background: #39c;
+  background: #39c;
 }
 
 #nav li:hover ul {
-	display: block;
+  display: block;
+}
+
+#home {
+  margin: .5em;
+}
+
+#red {
+  background: #f00;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  line-height: 8em;
+}
+
+#green {
+  background: #0f0;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  line-height: 8em;
+}
+
+#blue {
+  background: #00f;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  line-height: 8em;
+}
+
+@media screen and (max-width: 512px) {
+  #bannerright {
+    display: none;
+  }
 }
